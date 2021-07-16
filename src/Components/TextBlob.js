@@ -5,7 +5,6 @@ const StyledTextBlob = styled.div`
     font-weight: 400;
     padding: 20px 100px;
     text-align: justify;
-    width: 80%;
 `;
 
 const TextBlob = ({text}) => {
