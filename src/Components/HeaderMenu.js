@@ -25,6 +25,10 @@ const StyledMenuLinkA = styled.a`
 `;
 
 const NavMenu = styled.ul`
+    @media only screen and (maxWidth: 860px){
+        display: none;
+    }
+
     list-style-type: none;
     margin: 0;
     padding: 0;
