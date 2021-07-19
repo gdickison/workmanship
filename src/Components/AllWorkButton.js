@@ -36,7 +36,7 @@ const MenuLink = ({text}) => {
     )
 }
 
-const MiddleNavBar = () => {
+const AllWorkButton = () => {
     return (
         <NavMenu>
             <MenuItem>
@@ -46,4 +46,4 @@ const MiddleNavBar = () => {
     )
 }
 
-export default MiddleNavBar;
+export default AllWorkButton;
