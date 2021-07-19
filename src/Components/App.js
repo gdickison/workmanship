@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./Header";
 import TextBlob from "./TextBlob";
 import HeroImage from "./HeroImage";
+import MiddleHeader from "./MiddleHeader";
 
 const AppContianerDiv = styled.div`
   height: 100vh;
@@ -17,6 +18,7 @@ const App = () => {
         text="What we are & what we offer: 1-3 sentences that establish trust, confidence, and hint at the opportunity the client siezes by working with us. Bait the hook."
       />
       <HeroImage />
+      <MiddleHeader />
     </AppContianerDiv>
   )
 };
