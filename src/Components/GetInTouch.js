@@ -1,8 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const MenuItem = styled.li`
-    /* float: right; */
     padding: 16px 0;
     display: inline-block;
 `;
@@ -27,7 +26,10 @@ const NavMenu = styled.ul`
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, 10%);
 `;
 
 const MenuLink = ({text}) => {
@@ -36,23 +38,27 @@ const MenuLink = ({text}) => {
     )
 }
 
-const HeaderMenu = () => {
+const GetInTouchMenu = () => {
     return (
         <NavMenu>
             <MenuItem>
-                <MenuLink text="work" href="#"/>
-            </MenuItem>
-            <MenuItem>
-                <MenuLink text="about" href="#"/>
-            </MenuItem>
-            <MenuItem>
-                <MenuLink text="services" href="#"/>
-            </MenuItem>
-            <MenuItem>
-                <MenuLink text="email us" href="#"/>
+                <MenuLink text="get in touch" href="#"/>
             </MenuItem>
         </NavMenu>
     )
 }
 
-export default HeaderMenu;
+const StyledGetInTouchDiv = styled.div`
+    padding: 10px;
+    text-transform: uppercase;
+`;
+
+const GetInTouchHeader = () => {
+    return (
+        <StyledGetInTouchDiv>
+            <GetInTouchMenu/>
+        </StyledGetInTouchDiv>
+    )
+}
+
+export default GetInTouchHeader;
