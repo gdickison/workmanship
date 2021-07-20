@@ -1,0 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    max-width: 1060px;
+    margin: auto;
+}
