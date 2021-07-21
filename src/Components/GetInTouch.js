@@ -27,9 +27,7 @@ const NavMenu = styled.ul`
     margin: 0;
     padding: 0;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%, 10%);
+    text-align: center;
 `;
 
 const MenuLink = ({text}) => {
