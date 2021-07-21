@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const TeamContainer = styled.div`
     background-color: #C4C4C4;
     height: 400px;
-    margin: 0 100px;
 `;
 
 const TeamRow = styled.div`
