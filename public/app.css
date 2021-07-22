@@ -10,3 +10,9 @@ body {
     max-width: 1060px;
     margin: auto;
 }
+
+.work-link,
+.project-image {
+    width: 100%;
+    height: 100%;
+}

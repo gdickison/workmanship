@@ -12,7 +12,7 @@ const FeaturedProjects = () => {
         <StyledFeaturedProjectsDiv>
             <span style={{fontWeight: "900", padding: "16px 0", float: "left", height: "50px"}}>FEATURED PROJECTS</span>
             <AllWorkButton/>
-            <FeaturedProjectPhotos />
+            <FeaturedProjectPhotos xRepeat="3"/>
         </StyledFeaturedProjectsDiv>
     )
 }
