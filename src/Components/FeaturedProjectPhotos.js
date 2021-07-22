@@ -15,6 +15,10 @@ const ProjectCol = styled.div`
     padding: 0 5px;
     font-size: 12px;
     font-weight: 700;
+
+    @media only screen and (max-width: 600px) {
+        padding: 0;
+    }
 `;
 
 const WorkLink = ({linkRef, children}) => {
@@ -59,6 +63,10 @@ const ProjectImageSubtitle = styled.p`
 
     @media only screen and (max-width: 900px) {
         font-size: 12px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding-bottom: 5px;
     }
 `;
 
