@@ -5,13 +5,12 @@ import FeaturedProjectPhotos from './FeaturedProjectPhotos';
 
 const StyledFeaturedProjectsDiv = styled.div`
     padding: 0 100px;
-    text-transform: uppercase;
 `;
 
 const FeaturedProjects = () => {
     return (
         <StyledFeaturedProjectsDiv>
-            <span style={{fontWeight: "900", padding: "16px 0", float: "left", height: "50px"}}>featured projects</span>
+            <span style={{fontWeight: "900", padding: "16px 0", float: "left", height: "50px"}}>FEATURED PROJECTS</span>
             <AllWorkButton/>
             <FeaturedProjectPhotos />
         </StyledFeaturedProjectsDiv>

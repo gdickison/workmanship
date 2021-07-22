@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const MenuItem = styled.li`
-    /* float: right; */
     padding: 16px 0;
     display: inline-block;
 `;
@@ -40,7 +39,7 @@ const AllWorkButton = () => {
     return (
         <NavMenu>
             <MenuItem>
-                <MenuLink text="all work" href="#"/>
+                <MenuLink text="ALL WORK" href="#"/>
             </MenuItem>
         </NavMenu>
     )
