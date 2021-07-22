@@ -19,7 +19,7 @@ const App = () => {
       <TextBlob
         text="What we are & what we offer: 1-3 sentences that establish trust, confidence, and hint at the opportunity the client siezes by working with us. Bait the hook."
       />
-      <HeroImage />
+      <HeroImage xRepeat="1" />
       <FeaturedProjects />
       <TextBlob
         text="What we are & what we offer: 1-3 sentences that establish trust, confidence, and hint at the opportunity the client siezes by working with us. Bait the hook."

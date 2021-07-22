@@ -6,9 +6,15 @@ const StyledTextBlob = styled.div`
     padding: 30px 100px;
     text-align: justify;
 
-    @media only screen and (maxWidth: 860px){
-        font-size: 1em;
+    @media only screen and (max-width: 1024px) {
+        font-size: 24px;
         transition: ease all .5s;
+    }
+
+    @media only screen and (max-width: 760px) {
+        font-size: 18px;
+        transition: ease all .5s;
+        text-align: left;
     }
 `;
 

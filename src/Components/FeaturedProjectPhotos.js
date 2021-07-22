@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const ProjectRow = styled.div`
     display: grid;
     grid-template-columns: repeat(${props => props.xRepeat}, 1fr);
+    grid-gap: 20px;
     clear: both;
     @media only screen and (max-width: 600px) {
         grid-template-columns: 1fr;
@@ -12,7 +13,6 @@ const ProjectRow = styled.div`
 const ProjectCol = styled.div`
     display: flex;
     flex-flow: column;
-    padding: 0 5px;
     font-size: 12px;
     font-weight: 700;
 
@@ -21,7 +21,7 @@ const ProjectCol = styled.div`
     }
 `;
 
-const WorkLink = ({linkRef, children}) => {
+const ProjectLink = ({linkRef, children}) => {
     return (
         <a href={linkRef} className="work-link">
             {children}
@@ -73,13 +73,13 @@ const ProjectImageSubtitle = styled.p`
 const FeaturedProjectPhotos = ({xRepeat}) => {
     return (
         <ProjectRow xRepeat={xRepeat}>
-            <ProjectCol style={{paddingLeft: "0"}}>
-                <WorkLink linkRef="#">
+            <ProjectCol>
+                <ProjectLink linkRef="#">
                     <ProjectImage
                         source="images/project_upland.png"
                         altText="project upland"
                     />
-                </WorkLink>
+                </ProjectLink>
                 <ProjectImageTitle>
                     Project Upland
                 </ProjectImageTitle>
@@ -88,12 +88,12 @@ const FeaturedProjectPhotos = ({xRepeat}) => {
                 </ProjectImageSubtitle>
             </ProjectCol>
             <ProjectCol>
-                <WorkLink linkRef="#">
+                <ProjectLink linkRef="#">
                     <ProjectImage
                         source="images/first_fruits_wine.png"
                         altText="first fruits wine"
                     />
-                </WorkLink>
+                </ProjectLink>
                 <ProjectImageTitle>
                     First Fruits Wine
                 </ProjectImageTitle>
@@ -101,13 +101,13 @@ const FeaturedProjectPhotos = ({xRepeat}) => {
                     Logo, Packaging
                 </ProjectImageSubtitle>
             </ProjectCol>
-            <ProjectCol style={{paddingRight: "0"}}>
-                <WorkLink linkRef="#">
+            <ProjectCol>
+                <ProjectLink linkRef="#">
                     <ProjectImage
                         source="images/parakeet_records.png"
                         altText="parakeet records"
                     />
-                </WorkLink>
+                </ProjectLink>
                 <ProjectImageTitle>
                     Parakeet Records
                 </ProjectImageTitle>
@@ -119,4 +119,12 @@ const FeaturedProjectPhotos = ({xRepeat}) => {
     )
 }
 
-export default FeaturedProjectPhotos;
+export {
+    ProjectRow,
+    ProjectCol,
+    ProjectLink,
+    ProjectImage,
+    ProjectImageTitle,
+    ProjectImageSubtitle,
+    FeaturedProjectPhotos
+};

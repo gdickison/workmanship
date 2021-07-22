@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import AllWorkButton from './AllWorkButton';
-import FeaturedProjectPhotos from './FeaturedProjectPhotos';
+import {FeaturedProjectPhotos} from './FeaturedProjectPhotos';
 
 const StyledFeaturedProjectsDiv = styled.div`
     padding: 0 100px;
