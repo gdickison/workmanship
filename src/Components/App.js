@@ -17,11 +17,13 @@ const App = () => {
     <AppContianerDiv>
       <Header />
       <TextBlob
+        justification="justify"
         text="What we are & what we offer: 1-3 sentences that establish trust, confidence, and hint at the opportunity the client siezes by working with us. Bait the hook."
       />
       <HeroImage xRepeat="1" />
       <FeaturedProjects />
       <TextBlob
+        justification="center"
         text="What we are & what we offer: 1-3 sentences that establish trust, confidence, and hint at the opportunity the client siezes by working with us. Bait the hook."
       />
       <GetInTouchHeader />

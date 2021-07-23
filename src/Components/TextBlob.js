@@ -4,7 +4,7 @@ const StyledTextBlob = styled.div`
     font-size: 30px;
     font-weight: 400;
     padding: 30px 100px;
-    text-align: justify;
+    text-align: ${props => props.justification};
 
     @media only screen and (max-width: 1024px) {
         font-size: 24px;
@@ -22,9 +22,9 @@ const StyledTextBlob = styled.div`
     }
 `;
 
-const TextBlob = ({text}) => {
+const TextBlob = ({justification, text}) => {
     return (
-        <StyledTextBlob>{text}</StyledTextBlob>
+        <StyledTextBlob justification={justification}>{text}</StyledTextBlob>
     )
 }
 
