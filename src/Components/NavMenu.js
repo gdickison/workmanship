@@ -21,7 +21,7 @@ const NavMenu = () => {
             <style jsx>{`
                 .navigation{
                     display: flex;
-                    height: 50px;
+                    height: 60px;
                 }
 
                 .navigation ul{
