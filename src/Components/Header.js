@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HeaderMenu from './HeaderMenu';
 import Logo from './Logo';
+import NavMenu from './NavMenu';
 
 const StyledHeaderDiv = styled.div`
     display: flex;
@@ -15,7 +16,8 @@ const Header = () => {
     return (
         <StyledHeaderDiv>
             <Logo />
-            <HeaderMenu/>
+            {/* <HeaderMenu/> */}
+            <NavMenu />
         </StyledHeaderDiv>
     )
 }
