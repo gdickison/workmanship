@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const MenuItem = styled.li`
-    /* float: right; */
     padding: 16px 0;
     display: inline-block;
 `;

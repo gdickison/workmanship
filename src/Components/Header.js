@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeaderMenu from './HeaderMenu';
 import Logo from './Logo';
 import NavMenu from './NavMenu';
 
@@ -16,7 +15,6 @@ const Header = () => {
     return (
         <StyledHeaderDiv>
             <Logo />
-            {/* <HeaderMenu/> */}
             <NavMenu />
         </StyledHeaderDiv>
     )
