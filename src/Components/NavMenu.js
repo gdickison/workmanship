@@ -17,6 +17,10 @@ const StyledMenuLinkA = styled.a`
     @media (max-width: 822px){
         padding: 5px;
     }
+
+    @media (max-width: 480px){
+        font-size: 16px;
+    }
 `;
 
 const MenuLink = ({text}) => {
@@ -75,14 +79,19 @@ const NavMenu = () => {
                     .navigation ul{
                         display: ${hamburgerOpen ? 'inline' : 'none'};
                         height: 100vh;
-                        width: 50vw;
                         margin-top: 50px;
-                        position: fixed;
+                        position: absolute;
                         
                     }
 
                     .navigation ul li{
                         padding: 5px;
+                    }
+                }
+
+                @media (max-width: 480px){
+                    .navigation ul li{
+                        padding: 2px;
                     }
                 }
             `}</style>

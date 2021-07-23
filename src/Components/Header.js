@@ -9,6 +9,10 @@ const StyledHeaderDiv = styled.div`
     align-items: center;
     padding: 100px;
     text-transform: uppercase;
+
+    @media (max-width: 480px){
+        padding: 50px;
+    }
 `;
 
 const Header = () => {

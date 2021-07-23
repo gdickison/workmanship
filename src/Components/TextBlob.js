@@ -16,6 +16,10 @@ const StyledTextBlob = styled.div`
         transition: ease all .5s;
         text-align: left;
     }
+
+    @media (max-width: 480px){
+        padding: 50px 50px;
+    }
 `;
 
 const TextBlob = ({text}) => {
