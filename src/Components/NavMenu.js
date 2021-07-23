@@ -1,5 +1,29 @@
 import { useState } from 'react';
 import Hamburger from "./Hamburger";
+import styled from 'styled-components';
+
+const StyledMenuLinkA = styled.a`
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #E5E5E5;
+        color: #000000;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+
+    @media (max-width: 822px){
+        padding: 5px;
+    }
+`;
+
+const MenuLink = ({text}) => {
+    return (
+        <StyledMenuLinkA>{text}</StyledMenuLinkA>
+    )
+}
 
 const NavMenu = () => {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -10,10 +34,10 @@ const NavMenu = () => {
     return (
         <div className="navigation">
             <ul>
-                <li>work</li>
-                <li>about</li>
-                <li>services</li>
-                <li>email us</li>
+                <li><MenuLink text="work" href="#"/></li>
+                <li><MenuLink text="about" href="#"/></li>
+                <li><MenuLink text="services" href="#"/></li>
+                <li><MenuLink text="email us" href="#"/></li>
             </ul>
             <div className="hamburger" onClick={toggleHamburger}>
                 <Hamburger isOpen={hamburgerOpen}/>
@@ -32,11 +56,7 @@ const NavMenu = () => {
                     margin: 0px;
                     padding: 0px;
                     overflow: hidden;
-                }
-
-                .navigation ul li{
                     list-style-type: none;
-                    padding-right: 10px;
                 }
 
                 .hamburger{
@@ -44,7 +64,7 @@ const NavMenu = () => {
                     z-index: 6;
                 }
 
-                @media (max-width: 767px){
+                @media (max-width: 822px){
                     .hamburger{
                         display: flex;
                         padding-top: 10px;
@@ -59,6 +79,10 @@ const NavMenu = () => {
                         margin-top: 50px;
                         position: fixed;
                         
+                    }
+
+                    .navigation ul li{
+                        padding: 5px;
                     }
                 }
             `}</style>

@@ -15,6 +15,7 @@ const StyledMenuLinkA = styled.a`
         background-color: #E5E5E5;
         color: #000000;
         cursor: pointer;
+        border-radius: 2px;
     }
 `;
 
