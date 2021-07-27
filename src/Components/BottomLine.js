@@ -91,7 +91,7 @@ const BottomLine = () => {
                 <Contact text="hi@workmanship.com" />
                 <Contact text="102 S. Main #104" />
                 <Contact text="Moscow, Idaho 83843" />
-                <p style={{textAlign: "right", paddingRight: "50px", marginTop: "10px"}}><a href="https://www.instagram.com/woostersmoscow/" target="_blank" className="instagram"><i className="fab fa-instagram"></i></a></p>
+                <p style={{textAlign: "right", paddingRight: "50px", marginTop: "10px"}}><a href="https://www.instagram.com/woostersmoscow/" target="_blank" rel="noreferrer" className="instagram"><i className="fab fa-instagram"></i></a></p>
             </div>
             <div style={{margin: "75px 0", borderLeft: "1px solid #BFBFBF"}}>
                 <p style={{paddingTop: "20px", fontSize: "24px", textAlign: "left", paddingLeft: "50px"}}>newsletter</p>
