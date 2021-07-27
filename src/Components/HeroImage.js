@@ -17,7 +17,7 @@ const HeroImage = ({xRepeat}) => {
                     altText="niangua coffee"
                 />
                 <ProjectImageTitle>
-                    NIANGUA COFEE
+                    NIANGUA COFFEE
                 </ProjectImageTitle>
                 <ProjectImageSubtitle>
                     Brand, Packaging, Apparel
