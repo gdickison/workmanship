@@ -5,6 +5,7 @@ const ProjectRow = styled.div`
     grid-template-columns: repeat(${props => props.xRepeat}, 1fr);
     grid-gap: 20px;
     clear: both;
+    padding-bottom: 15px;
     @media only screen and (max-width: 600px) {
         grid-template-columns: 1fr;
     }

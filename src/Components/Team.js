@@ -3,6 +3,9 @@ import styled from 'styled-components';
 const TeamContainer = styled.div`
     background-color: #C4C4C4;
     height: 480px;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
 `;
 
 const TeamContainerHeader = styled.p`
@@ -16,8 +19,8 @@ const TeamContainerHeader = styled.p`
 
 const TeamRow = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    clear: both;
+    grid-template-columns: auto minmax(100px, 300px) minmax(100px, 300px) auto;
+    justify-items: center;
 `;
 
 const TeamCol = styled.div`
@@ -35,19 +38,19 @@ const Team = () => {
                 the team
             </TeamContainerHeader>
             <TeamRow>
-            <div/>
-            <TeamCol>
-                <img src="images/james.png" style={{maxWidth: "100%", maxHeight: "100%"}} alt="project upland"></img>
-                <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0"}}>James</p>
-                <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0 0 10px 0", fontStyle: "italic"}}>Chief, Dad</p>
-            </TeamCol>
-            <TeamCol>
-                <img src="images/samuel.png" style={{maxWidth: "100%", maxHeight: "100%"}} alt="first fruits wine"></img>
-                <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0"}}>Samuel</p>
-                <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0 0 10px 0", fontStyle: "italic"}}>Designer, Dad</p>
-            </TeamCol>
-            <div/>
-        </TeamRow>
+                <div/>
+                <TeamCol>
+                    <img src="images/james.png" style={{maxWidth: "100%", maxHeight: "100%"}} alt="james"></img>
+                    <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0"}}>James</p>
+                    <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0 0 10px 0", fontStyle: "italic"}}>Chief, Dad</p>
+                </TeamCol>
+                <TeamCol>
+                    <img src="images/samuel.png" style={{maxWidth: "100%", maxHeight: "100%"}} alt="samuel"></img>
+                    <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0"}}>Samuel</p>
+                    <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0 0 10px 0", fontStyle: "italic"}}>Designer, Dad</p>
+                </TeamCol>
+                <div/>
+            </TeamRow>
         </TeamContainer>
     )
 }

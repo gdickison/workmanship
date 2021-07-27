@@ -10,7 +10,7 @@ const StyledFeaturedProjectsDiv = styled.div`
 const FeaturedProjects = () => {
     return (
         <StyledFeaturedProjectsDiv>
-            <span style={{fontWeight: "900", padding: "16px 0", float: "left", height: "50px"}}>FEATURED PROJECTS</span>
+            <span style={{fontWeight: "900", padding: "16px 0", float: "left", height: "30px"}}>FEATURED PROJECTS</span>
             <AllWorkButton/>
             <FeaturedProjectPhotos xRepeat="3"/>
         </StyledFeaturedProjectsDiv>

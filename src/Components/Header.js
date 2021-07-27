@@ -7,7 +7,7 @@ const StyledHeaderDiv = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 15px 100px;
     text-transform: uppercase;
 
     @media (max-width: 480px){
