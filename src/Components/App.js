@@ -6,6 +6,7 @@ import HeroImage from "./HeroImage";
 import FeaturedProjects from "./FeaturedProjects";
 import GetInTouchHeader from "./GetInTouch";
 import Team from "./Team";
+import BottomLine from "./BottomLine";
 
 const AppContianerDiv = styled.div`
   height: 100vh;
@@ -28,6 +29,7 @@ const App = () => {
       />
       <GetInTouchHeader />
       <Team />
+      <BottomLine />
     </AppContianerDiv>
   )
 };

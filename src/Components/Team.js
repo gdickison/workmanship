@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const TeamContainer = styled.div`
     background-color: #C4C4C4;
-    height: 400px;
+    height: 480px;
 `;
 
 const TeamContainerHeader = styled.p`
@@ -15,12 +15,12 @@ const TeamContainerHeader = styled.p`
 `;
 
 const TeamRow = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     clear: both;
 `;
 
 const TeamCol = styled.div`
-    width: 25%;
     height: 300px;
     vertical-align: top;
     display: inline-block;
@@ -35,7 +35,7 @@ const Team = () => {
                 the team
             </TeamContainerHeader>
             <TeamRow>
-            <TeamCol />
+            <div/>
             <TeamCol>
                 <img src="images/james.png" style={{maxWidth: "100%", maxHeight: "100%"}} alt="project upland"></img>
                 <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0"}}>James</p>
@@ -46,7 +46,7 @@ const Team = () => {
                 <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0"}}>Samuel</p>
                 <p style={{color: "black", textAlign: "center", maxWidth: "300px", margin: "0 0 10px 0", fontStyle: "italic"}}>Designer, Dad</p>
             </TeamCol>
-            <TeamCol />
+            <div/>
         </TeamRow>
         </TeamContainer>
     )
