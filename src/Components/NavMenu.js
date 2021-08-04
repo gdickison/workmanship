@@ -4,14 +4,38 @@ import styled from 'styled-components';
 
 const StyledMenuLinkA = styled.a`
     text-align: center;
-    padding: 16px;
+    padding: 12px;
     text-decoration: none;
+    letter-spacing: .1rem;
 
     &:hover {
-        background-color: #E5E5E5;
-        color: #000000;
+        border: 1px solid #E5E5E5;
+        padding: 11px;
         cursor: pointer;
         border-radius: 25px;
+    }
+
+    @media (max-width: 822px){
+        padding: 5px;
+    }
+
+    @media (max-width: 480px){
+        font-size: 16px;
+    }
+`;
+
+const StyledEmailLinkA = styled.a`
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    border: 1px solid #E5E5E5;
+    border-radius: 25px;
+
+    &:hover {
+        color: #000000;
+        background-color: #E5E5E5;
+        cursor: pointer;
     }
 
     @media (max-width: 822px){
@@ -29,6 +53,12 @@ const MenuLink = ({text}) => {
     )
 }
 
+const EmailLink = () => {
+    return (
+        <StyledEmailLinkA>email us</StyledEmailLinkA>
+    )
+}
+
 const NavMenu = () => {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
     const toggleHamburger = () => {
@@ -38,10 +68,10 @@ const NavMenu = () => {
     return (
         <div className="navigation">
             <ul>
-                <li><MenuLink text="work" href="#"/></li>
-                <li><MenuLink text="about" href="#"/></li>
-                <li><MenuLink text="services" href="#"/></li>
-                <li><MenuLink text="email us" href="#"/></li>
+                <li style={{paddingRight: "2px"}}><MenuLink text="work" href="#"/></li>
+                <li style={{paddingRight: "2px"}}><MenuLink text="about" href="#"/></li>
+                <li style={{paddingRight: "2px"}}><MenuLink text="services" href="#"/></li>
+                <li><EmailLink href="#"/></li>
             </ul>
             <div className="hamburger" onClick={toggleHamburger}>
                 <Hamburger isOpen={hamburgerOpen}/>

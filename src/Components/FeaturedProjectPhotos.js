@@ -38,9 +38,10 @@ const ProjectImage = ({source, altText}) => {
 
 const ProjectImageTitle = styled.p`
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     margin: 10px 0 0 0;
+    letter-spacing: .1rem;
 
     @media only screen and (max-width: 1024px) {
         font-size: 1.5vw;
@@ -57,6 +58,7 @@ const ProjectImageSubtitle = styled.p`
     font-weight: 400;
     font-style: italic;
     margin: 0;
+    letter-spacing: .05rem;
 
     @media only screen and (max-width: 1024px) {
         font-size: 1.5vw;

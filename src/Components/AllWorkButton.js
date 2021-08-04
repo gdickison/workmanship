@@ -8,14 +8,16 @@ const MenuItem = styled.li`
 
 const StyledMenuLinkA = styled.a`
     text-align: center;
-    padding: 16px;
+    padding: 12px;
     text-decoration: none;
+    letter-spacing: .1rem;
+    border: 1px solid #E5E5E5;
+    border-radius: 25px;
 
     &:hover {
         background-color: #E5E5E5;
         color: #000000;
         cursor: pointer;
-        border-radius: 25px;
     }
 `;
 

@@ -5,13 +5,15 @@ const StyledBottomLine = styled.div`
     grid-template-columns: repeat(4, 1fr);
     height: 400px;
     text-transform: uppercase;
+    letter-spacing: .1rem;
 `;
 
 const StyledContact = styled.p`
-    font-size: 12px;
+    font-size: 15px;
     text-align: right;
     margin: 0;
     padding: 1px 50px 1px 0;
+    height: 18px;
 `;
 
 const Contact = ({text}) => {
@@ -21,10 +23,11 @@ const Contact = ({text}) => {
 }
 
 const StyledNewsletter = styled.p`
-    font-size: 12px;
+    font-size: 15px;
     text-align: left;
     margin: 0;
     padding: 1px 0 1px 50px;
+    height: 18px;
 `;
 
 const Newsletter = ({text}) => {
@@ -34,7 +37,7 @@ const Newsletter = ({text}) => {
 }
 
 const MenuItem = styled.li`
-    padding: 16px 0;
+    padding: 24px 0;
     display: inline-block;
 `;
 
@@ -44,7 +47,7 @@ const StyledMenuLinkA = styled.a`
     text-decoration: none;
     border: 1px solid #BFBFBF;
     border-radius: 25px;
-    font-size: 12px;
+    font-size: 15px;
 
     &:hover {
         background-color: #E5E5E5;

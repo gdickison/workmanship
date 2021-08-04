@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const TeamContainer = styled.div`
     background-color: #C4C4C4;
-    height: 480px;
+    height: 500px;
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
@@ -11,10 +11,13 @@ const TeamContainer = styled.div`
 const TeamContainerHeader = styled.p`
     color: black;
     text-align: center;
-    padding: 40px;
+    padding: 60px 40px 40px 40px;
+    margin: 0;
     text-transform: uppercase;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: .15rem;
+    height: 30px;
 `;
 
 const TeamRow = styled.div`

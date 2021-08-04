@@ -16,7 +16,7 @@ const HeroImage = ({xRepeat}) => {
                     source="images/niangua.jpg"
                     altText="niangua coffee"
                 />
-                <ProjectImageTitle>
+                <ProjectImageTitle style={{letterSpacing: ".15rem"}}>
                     NIANGUA COFFEE
                 </ProjectImageTitle>
                 <ProjectImageSubtitle>
