@@ -45,13 +45,13 @@ const StyledMenuLinkA = styled.a`
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    border: 1px solid #BFBFBF;
+    border: 1px solid var(--text-color);
     border-radius: 25px;
     font-size: 15px;
 
     &:hover {
-        background-color: #E5E5E5;
-        color: #000000;
+        background-color: var(--link-border-color);
+        color: var(--background-color);
         cursor: pointer;
     }
 `;
@@ -88,7 +88,7 @@ const BottomLine = () => {
     return (
         <StyledBottomLine>
             <div/>
-            <div style={{margin: "75px 0", borderRight: "1px solid #BFBFBF"}}>
+            <div style={{margin: "75px 0", borderRight: "1px solid var(--text-color)"}}>
                 <p style={{paddingTop: "20px", fontSize: "24px", textAlign: "right", paddingRight: "50px"}}>contact</p>
                 <Contact text="208.768.8888" />
                 <Contact text="hi@workmanship.com" />
@@ -96,7 +96,7 @@ const BottomLine = () => {
                 <Contact text="Moscow, Idaho 83843" />
                 <p style={{textAlign: "right", paddingRight: "50px", marginTop: "10px"}}><a href="https://www.instagram.com/woostersmoscow/" target="_blank" rel="noreferrer" className="instagram"><i className="fab fa-instagram"></i></a></p>
             </div>
-            <div style={{margin: "75px 0", borderLeft: "1px solid #BFBFBF"}}>
+            <div style={{margin: "75px 0", borderLeft: "1px solid var(--text-color)"}}>
                 <p style={{paddingTop: "20px", fontSize: "24px", textAlign: "left", paddingLeft: "50px"}}>newsletter</p>
                 <Newsletter text="new projects"/>
                 <Newsletter text="limited merch"/>

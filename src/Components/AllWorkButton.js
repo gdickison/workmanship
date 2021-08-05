@@ -11,12 +11,12 @@ const StyledMenuLinkA = styled.a`
     padding: 12px;
     text-decoration: none;
     letter-spacing: .1rem;
-    border: 1px solid #E5E5E5;
+    border: 1px solid var(--link-border-color);
     border-radius: 25px;
 
     &:hover {
-        background-color: #E5E5E5;
-        color: #000000;
+        background-color: var(--link-border-color);
+        color: var(--background-color);
         cursor: pointer;
     }
 `;

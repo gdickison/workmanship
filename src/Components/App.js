@@ -10,7 +10,7 @@ import BottomLine from "./BottomLine";
 
 const AppContianerDiv = styled.div`
   height: 100vh;
-  color: #BFBFBF;
+  color: var(--text-color);
 `;
 
 const App = () => {

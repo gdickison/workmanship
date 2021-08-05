@@ -9,7 +9,7 @@ const StyledMenuLinkA = styled.a`
     letter-spacing: .1rem;
 
     &:hover {
-        border: 1px solid #E5E5E5;
+        border: 1px solid var(--link-border-color);
         padding: 11px;
         cursor: pointer;
         border-radius: 25px;
@@ -29,12 +29,12 @@ const StyledEmailLinkA = styled.a`
     padding: 12px;
     text-decoration: none;
     letter-spacing: .1rem;
-    border: 1px solid #E5E5E5;
+    border: 1px solid var(--link-border-color);
     border-radius: 25px;
 
     &:hover {
-        color: #000000;
-        background-color: #E5E5E5;
+        color: var(--background-color);
+        background-color: var(--link-border-color);
         cursor: pointer;
     }
 
