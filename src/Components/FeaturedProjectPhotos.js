@@ -37,7 +37,7 @@ const ProjectImage = ({source, altText}) => {
 }
 
 const ProjectImageTitle = styled.p`
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 10px 0 0 0;
@@ -54,10 +54,10 @@ const ProjectImageTitle = styled.p`
 
 const ProjectImageSubtitle = styled.p`
     font-family: "Playfair Display";
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     font-style: italic;
-    margin: 0;
+    margin: 5px 0;
     letter-spacing: .05rem;
 
     @media only screen and (max-width: 1024px) {

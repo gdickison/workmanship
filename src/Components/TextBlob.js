@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const StyledTextBlob = styled.div`
-    font-size: 30px;
-    font-weight: 400;
-    padding: 0 100px 10px 100px;
+    font-size: 32px;
+    font-weight: 300;
+    padding: 0 100px 70px 100px;
     text-align: ${props => props.justification};
     line-height: 45px;
+    letter-spacing: .02rem;
 
     @media only screen and (max-width: 1024px) {
         font-size: 24px;

@@ -11,7 +11,7 @@ const TeamContainer = styled.div`
 const TeamContainerHeader = styled.p`
     color: black;
     text-align: center;
-    padding: 60px 40px 40px 40px;
+    padding: 60px 40px;
     margin: 0;
     text-transform: uppercase;
     font-size: 24px;

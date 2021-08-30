@@ -19,7 +19,7 @@ const App = () => {
       <Header />
       <TextBlob
         justification="justify"
-        text="Workmanship crafts your brand. Our designs tell your story the same way you tell it to your family, your friends, and your customers. Look around our website. See what we've crafted for others, then let us craft a brand for you."
+        text="Workmanship is a guerrilla design and brand studio based in northern Idaho. We work with adventurous companies bent on making life better for their people."
       />
       <HeroImage xRepeat="1" />
       <FeaturedProjects />
